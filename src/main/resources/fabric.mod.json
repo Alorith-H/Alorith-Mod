@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "alorith",
+	"version": "${version}",
+	"name": "Alorith",
+	"description": "这是描述",
+	"authors": [
+		"#Alorith"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/alorith/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.alorith.Alorith"
+		],
+		"fabric-datagen": [
+			"com.alorith.AlorithDataGenerator"
+		],
+		"client": [
+			"com.alorith.AlorithClient"
+		]
+	},
+	"mixins": [
+		"alorith.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
